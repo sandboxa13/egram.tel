@@ -1,5 +1,5 @@
 using System;
-using Tel.Egram.Components.Popup;
+using Tel.Egram.Models.Application.Popup;
 
 namespace Tel.Egram.Components.Application
 {

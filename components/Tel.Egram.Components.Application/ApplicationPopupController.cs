@@ -1,5 +1,5 @@
 using System;
-using Tel.Egram.Components.Popup;
+using Tel.Egram.Models.Application.Popup;
 
 namespace Tel.Egram.Components.Application
 {
@@ -7,12 +7,12 @@ namespace Tel.Egram.Components.Application
     {
         public event EventHandler<PopupModel> ContextChanged;
         
-        public void Hide()
+        public void HidePopup()
         {
             ContextChanged?.Invoke(this, null);
         }
 
-        public void Show(PopupModel popupModel)
+        public void ShowPopup(PopupModel popupModel)
         {
             ContextChanged?.Invoke(this, popupModel);
         }
